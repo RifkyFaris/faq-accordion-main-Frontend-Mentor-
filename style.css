@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Darkpurple: hsl(292, 42%, 14%);
+--Fp : 16px;
+
+}
+body{
+    background: url(./assets//images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 250px;
+    background-color: var(--Lightpink);
+    
+}
+.container{
+    max-width: 700px;
+    background: white;
+    margin:200px auto 200px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+.faq{
+    display: flex;
+    gap: 15px;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+.what{
+    display: flex;
+    margin-top: 20px;
+    
+
+}
+.plus{
+    position: absolute;
+    right: 450px;
+}
+.q{
+    color: var(--Darkpurple);
+    font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: var(--Fp);
+  
+}
+.minus{
+    position: absolute;
+    right: 450px;
+    display: none;
+}
+#fm{
+    margin-top: 13px;
+    color: var(--Grayishpurple);
+    display: none;
+}
+.hr{
+    margin-top: 15px;
+    border: 0.1px solid var(--Lightpink);
+}
+#fm1{
+    margin-top: 13px;
+    color: var(--Grayishpurple);
+    display: none;
+}
+#fm2{
+    margin-top: 13px;
+    color: var(--Grayishpurple);
+    display: none;
+}
+#fm3{
+    margin-top: 13px;
+    color: var(--Grayishpurple);
+    display: none;
+}
+@media screen and (max-width:450px){
+    body{
+        background: url(./assets//images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+         background-color: var(--Lightpink);
+        
+    }
+    
+    .container{
+        max-width: 340px;
+        background: white;
+        margin: 200px auto 100px auto;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .plus{
+        position: absolute;
+        right: 30px;
+    }
+    .minus{
+        position: absolute;
+        right: 30px;
+        display: none;
+    }
+    
+}
